@@ -1,0 +1,16 @@
+IN CMD
+FOR FACEBOOK
+
+C:\Program Files\Java\jdk1.8.0_171\bin>keytool -exportcert -alias androidrelease
+key -keystore "ReleasekeyFullPath.jks" | "C:\openssl\bin\o
+penssl.exe" sha1 -binary | "C:\openssl\bin\openssl.exe" base64
+Enter keystore password:  password of release key
+key=xxxxxxxxxxxxxxxxx
+
+FOR Gmail
+
+C:\Program Files\Java\jdk1.6.0_39\bin>keytool -list -v -keystore 
+"E:\My Projects \Android\android studio\signed apks\Hello World\HelloWorld.jks"
+
+
+upload both key in perticular developer console
